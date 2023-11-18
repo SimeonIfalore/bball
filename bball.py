@@ -4,11 +4,11 @@ import sklearn
 import pandas as pd
 import numpy as np
 from PIL import Image
-model = pickle.load(open("C:\\Users\\Simeon\\Desktop\\randomf_model.sav", 'rb'))
+model = pickle.load(open("randomf_model.sav", 'rb'))
 
 st.title('Player Salary Prediction')
 st.sidebar.header('Player Data')
-image = Image.open("C:\\Users\\Simeon\\Downloads\\pexels-markus-spiske-1752757.jpg")
+image = Image.open("pexels-markus-spiske-1752757.jpg")
 st.image(image,width=550)
 # FUNCTION
 def user_report():
